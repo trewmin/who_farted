@@ -1,0 +1,15 @@
+<div class='lower_box'>
+<br />
+<br />
+<h3> Log In: </h3>
+<br />
+<br />
+<%= form_tag sessions_path do %>
+  <%= text_field_tag :name, nil, placeholder: "Name" %><br />
+  <%= password_field_tag :password, nil, placeholder: "Password" %><br /><br />
+  <%= submit_tag "Submit" %>
+<% end %>
+<br /><br />
+<h3>or
+<br /><%= link_to "Sign Up", signup_path %></h3>
+</div>

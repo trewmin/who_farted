@@ -1,0 +1,4 @@
+<div class="menu">
+<%= link_to 'EDIT YOUR PROFILE', edit_user_path(@current_user) %><br /><br />
+<%= link_to 'HOME', user_path(@current_user) %> | <%= link_to 'GROUPS', users_groups_path %> | <%= link_to 'LOG OUT', logout_path %>
+</div>

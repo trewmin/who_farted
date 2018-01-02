@@ -1,0 +1,15 @@
+<div class='title_box'>
+  <div class='title_text'>
+    <h2><%= @user.name %>'s</h2>
+    <h1>Groups<h1>
+  </div>
+  <div class='title_mark'>
+    <h4>:</h4>
+  </div>
+  <%= render 'menu' %><br />
+  <ul>
+  <% @user.groups.each do |group| %>
+  <li><%= link_to group.name, group_path(group) %></li>
+  <% end %>
+  </ul>
+</div>

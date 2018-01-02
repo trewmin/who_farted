@@ -1,0 +1,121 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+   font-family: 'Open Sans', sans-serif;
+   position: absolute;
+   top:10%;
+   bottom:0;
+   left: 0;
+   right: 0;
+   margin: auto;
+   background-color: #f7f6f5;
+ }
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  color: #999248;
+  font-size: 60pt;
+  font-weight: normal;
+  line-height: 5pt;
+}
+
+h2 {
+  font-family: 'Berkshire Swash', cursive;
+  color: #fad164;
+  font-size: 55pt;
+  font-weight: normal;
+  line-height: 10pt;
+}
+
+h3 {
+  font-family: 'Berkshire Swash', cursive;
+  color: #fad164;
+  font-size: 25pt;
+  font-weight: normal;
+}
+
+h4 {
+  font-family: 'Berkshire Swash', cursive;
+  color: #faebb5;
+  font-size: 230pt;
+  font-weight: normal;
+  line-height: 10pt;
+}
+
+input {
+  text-align: center;
+  font-size: 10pt;
+  background-color: white;
+  border-color: black;
+  border-width: 1px;
+  width: 150px;
+}
+
+input[type=submit] {
+  background-color: #999248;
+  color: #fad164;
+  border-color: black;
+  border-width: 1px;
+  width: 155px;
+}
+
+a {
+    color: #999248;
+}
+
+a:visited {
+    color: #999248;
+}
+
+a:hover {
+    color: #fad164;
+}
+
+.title_box {
+  text-align: center;
+  margin: 0 auto;
+  width: 468px;
+  height: 250px;
+  background-color: ;
+  position: relative;
+}
+
+.title_text {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.title_mark {
+  z-index: 1;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  bottom: -300px;
+  right: 25px;
+  position: absolute;
+  transform: rotate(15deg);
+}
+
+.lower_box {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}

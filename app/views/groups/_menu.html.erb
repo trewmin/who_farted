@@ -1,0 +1,5 @@
+<div class="menu">
+<br />
+<%= link_to 'MY GROUPS', users_groups_path(@current_user) %> | <%= link_to 'ALL GROUPS', groups_path %> | <%= link_to 'NEW GROUP', new_group_path %><br /><br />
+<%= link_to 'HOME', user_path(@current_user) %> | <%= link_to 'GROUPS', users_groups_path(@current_user) %> | <%= link_to 'LOG OUT', logout_path %><br />
+</div>

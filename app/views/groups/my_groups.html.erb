@@ -1,0 +1,19 @@
+<div class='title_box'>
+  <div class='title_text'>
+    <h2>Your</h2>
+    <h1>Groups<h1>
+  </div>
+  <div class='title_mark'>
+    <h4>:</h4>
+  </div>
+  <%= render 'menu' %><br />
+  <% if @current_user.groups == [] %>
+    You haven't joined any groups!<br />
+    Check out all groups.<br />
+  <% end %>
+  <ul>
+  <% @current_user.groups.each do |group| %>
+  <li><%= link_to group.name, group_path(group) %></li>
+  <% end %>
+  </ul>
+</div>

@@ -1,0 +1,26 @@
+<div class='title_box'>
+  <div class='title_text'>
+    <h2>Welcome to</h2>
+    <h1><%= @group.name %><h1>
+  </div>
+  <div class='title_mark'>
+    <h4>!</h4>
+  </div>
+  <%= render 'menu' %><br />
+  <% if @group.admin_id == @current_user.id %>
+    <%= link_to "EDIT THIS GROUP", edit_group_path(@group) %></br>
+  <% end %>
+  <% if @current_user.groups.include?(@group) %>
+  <%= render 'fart_button' %><br />
+  <%= button_to "LEAVE GROUP", leave_group_path %>
+  <% else %>
+  <%= button_to "JOIN GROUP", join_group_path %>
+  <% end %>
+  <br /><br />
+  <h3>Members:</h3>
+  <ul>
+  <% @group.users.each do |user|%>
+    <li><%= link_to "#{user.name}", user_path(user) %></li>
+  <% end %>
+  </ul>
+</div>

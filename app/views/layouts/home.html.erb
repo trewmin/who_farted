@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Who Farted?</title>
+    <%= csrf_meta_tags %>
+
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Open+Sans" rel="stylesheet">
+
+    <%= stylesheet_link_tag    'home'%>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class='title_box'>
+      <div class='title_text'>
+        <h2>Who</h2>
+        <h1>Farted<h1>
+      </div>
+      <div class='title_mark'>
+        <h4>?</h4>
+      </div>
+    </div>
+    <%= yield %>
+  </body>
+</html>
